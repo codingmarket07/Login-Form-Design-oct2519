@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login Form Using HTML and CSS</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.input').focus( function() {
+			  $(this).parent().addClass('active');
+			});
+		});
+	</script>
+</head>
+<body>
+
+<div class="main_container">
+	<div class="navbar_wrapper">
+		<div class="navbar just_flex">
+			<div class="left_navbar just_flex">
+				<div class="logo">
+					<a href="#">Coding Market</a>
+				</div>
+				<ul class="menu just_flex">
+					<li><a href="#">Download</a></li>
+					<li><a href="#">Feature</a></li>
+					<li><a href="#">Pricing</a></li>
+					<li><a href="#">Videos</a></li>
+					<li><a href="#">FAQs</a></li>
+				</ul>
+			</div>
+			<div class="right_navbar">
+				<a href="#">Sign up</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="login_wrapper just_flex">
+		<div class="city_img">
+			<p>Enchance Yourself With Coding Market</p>
+		</div>
+		<div class="login">
+			<div class="title">Login into Coding Market</div>
+			<div class="login_inputs">
+				<div class="input_field">
+					<label class="label">
+						Username
+					</label>
+					<input type="text" class="input">
+				</div>
+				<div class="input_field">
+					<label class="label">
+						Password
+					</label>
+					<input type="password" class="input">
+				</div>
+				<div class="remember_forgot">
+					<div class="remember_me">
+						<label class="checkbox_container">
+							<input type="checkbox">
+							<span class="checkbox_mark"></span>
+							<span class="checkbox_text">
+								Remember me
+							</span>
+						</label>
+					</div>
+					<div class="forgot_pwd">
+						<a href="#">Forgot password?</a>
+					</div>
+				</div>
+				<div class="login_btn">
+					<a href="#">Login</a>
+				</div>
+				<div class="new_account">
+					Create new account
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
+
+</body>
+</html>
